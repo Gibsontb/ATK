@@ -1,3 +1,5 @@
 node_modules/
-generated/*.js
 dist/
+# generated outputs are reproducible
+/generated/*.js
+/generated/*.json

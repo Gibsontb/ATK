@@ -1,1 +1,60 @@
-// schemas/rules.schema.json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ATK Rules",
+  "type": "object",
+  "required": [
+    "rules_version",
+    "rules"
+  ],
+  "properties": {
+    "rules_version": {
+      "type": "string"
+    },
+    "notes": {
+      "type": "string"
+    },
+    "rules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "rule_id",
+          "when",
+          "rationale"
+        ],
+        "properties": {
+          "rule_id": {
+            "type": "string"
+          },
+          "when": {
+            "type": "object"
+          },
+          "require_capabilities": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "recommend_capabilities": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "recommend_patterns": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "rationale": {
+            "type": "string",
+            "minLength": 10
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

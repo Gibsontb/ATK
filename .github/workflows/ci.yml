@@ -1,0 +1,19 @@
+name: ATK CI
+
+on:
+  pull_request:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - run: npm ci || true
+      - run: node scripts/validate.mjs
+      - run: node scripts/build.mjs

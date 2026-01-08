@@ -1,1 +1,1241 @@
-// data/decision/capabilities.json
+{
+  "version": "0.1.0",
+  "capabilities": [
+    {
+      "capability_id": "ai_and_machine_learning.ai_containers",
+      "domain": "AI and Machine Learning",
+      "name": "AI CONTAINERS",
+      "used_for": "Building, training, deploying, and operating machine learning and AI solutions. Used for container orchestration and container runtime support."
+    },
+    {
+      "capability_id": "ai_and_machine_learning.ai_powered_assistant",
+      "domain": "AI and Machine Learning",
+      "name": "AI-POWERED ASSISTANT",
+      "used_for": "Building, training, deploying, and operating machine learning and AI solutions."
+    },
+    {
+      "capability_id": "ai_and_machine_learning.human_review_moderation",
+      "domain": "AI and Machine Learning",
+      "name": "HUMAN REVIEW/MODERATION",
+      "used_for": "Building, training, deploying, and operating machine learning and AI solutions."
+    },
+    {
+      "capability_id": "ai_and_machine_learning.chatbot_builder",
+      "domain": "AI and Machine Learning",
+      "name": "CHATBOT BUILDER",
+      "used_for": "Building, training, deploying, and operating machine learning and AI solutions."
+    },
+    {
+      "capability_id": "ai_and_machine_learning.data_labeling",
+      "domain": "AI and Machine Learning",
+      "name": "DATA LABELING",
+      "used_for": "Building, training, deploying, and operating machine learning and AI solutions."
+    },
+    {
+      "capability_id": "ai_and_machine_learning.document_extraction",
+      "domain": "AI and Machine Learning",
+      "name": "DOCUMENT EXTRACTION",
+      "used_for": "Building, training, deploying, and operating machine learning and AI solutions. Used for document extraction, OCR, and document understanding."
+    },
+    {
+      "capability_id": "ai_and_machine_learning.generative_ai",
+      "domain": "AI and Machine Learning",
+      "name": "GENERATIVE AI",
+      "used_for": "Building, training, deploying, and operating machine learning and AI solutions."
+    },
+    {
+      "capability_id": "ai_and_machine_learning.platforms",
+      "domain": "AI and Machine Learning",
+      "name": "PLATFORMS",
+      "used_for": "Building, training, deploying, and operating machine learning and AI solutions."
+    },
+    {
+      "capability_id": "ai_and_machine_learning.image_recognition",
+      "domain": "AI and Machine Learning",
+      "name": "IMAGE RECOGNITION",
+      "used_for": "Building, training, deploying, and operating machine learning and AI solutions."
+    },
+    {
+      "capability_id": "ai_and_machine_learning.inference_acceleration",
+      "domain": "AI and Machine Learning",
+      "name": "INFERENCE ACCELERATION",
+      "used_for": "Building, training, deploying, and operating machine learning and AI solutions."
+    },
+    {
+      "capability_id": "ai_and_machine_learning.language_translation",
+      "domain": "AI and Machine Learning",
+      "name": "LANGUAGE TRANSLATION",
+      "used_for": "Building, training, deploying, and operating machine learning and AI solutions. Used for language translation and localization."
+    },
+    {
+      "capability_id": "ai_and_machine_learning.ml_ai_chips",
+      "domain": "AI and Machine Learning",
+      "name": "ML/AI CHIPS",
+      "used_for": "Building, training, deploying, and operating machine learning and AI solutions."
+    },
+    {
+      "capability_id": "ai_and_machine_learning.managed_ml_platform",
+      "domain": "AI and Machine Learning",
+      "name": "MANAGED ML PLATFORM",
+      "used_for": "Building, training, deploying, and operating machine learning and AI solutions."
+    },
+    {
+      "capability_id": "ai_and_machine_learning.notebooks",
+      "domain": "AI and Machine Learning",
+      "name": "NOTEBOOKS",
+      "used_for": "Building, training, deploying, and operating machine learning and AI solutions."
+    },
+    {
+      "capability_id": "ai_and_machine_learning.online_fraud_detection",
+      "domain": "AI and Machine Learning",
+      "name": "ONLINE FRAUD DETECTION",
+      "used_for": "Building, training, deploying, and operating machine learning and AI solutions. Used for fraud/anomaly detection for transactions and behavior."
+    },
+    {
+      "capability_id": "ai_and_machine_learning.preconfigured_ml_vms",
+      "domain": "AI and Machine Learning",
+      "name": "PRECONFIGURED ML VMS",
+      "used_for": "Building, training, deploying, and operating machine learning and AI solutions."
+    },
+    {
+      "capability_id": "ai_and_machine_learning.recommendation",
+      "domain": "AI and Machine Learning",
+      "name": "RECOMMENDATION",
+      "used_for": "Building, training, deploying, and operating machine learning and AI solutions."
+    },
+    {
+      "capability_id": "ai_and_machine_learning.engine",
+      "domain": "AI and Machine Learning",
+      "name": "ENGINE",
+      "used_for": "Building, training, deploying, and operating machine learning and AI solutions."
+    },
+    {
+      "capability_id": "ai_and_machine_learning.speech_recognition_synthesis",
+      "domain": "AI and Machine Learning",
+      "name": "SPEECH RECOGNITION/SYNTHESIS",
+      "used_for": "Building, training, deploying, and operating machine learning and AI solutions. Used for speech recognition and synthesis."
+    },
+    {
+      "capability_id": "ai_and_machine_learning.text_analysis",
+      "domain": "AI and Machine Learning",
+      "name": "TEXT ANALYSIS",
+      "used_for": "Building, training, deploying, and operating machine learning and AI solutions."
+    },
+    {
+      "capability_id": "ai_and_machine_learning.time_series_forecasting",
+      "domain": "AI and Machine Learning",
+      "name": "TIME-SERIES FORECASTING",
+      "used_for": "Building, training, deploying, and operating machine learning and AI solutions."
+    },
+    {
+      "capability_id": "ai_and_machine_learning.video_analysis",
+      "domain": "AI and Machine Learning",
+      "name": "VIDEO ANALYSIS",
+      "used_for": "Building, training, deploying, and operating machine learning and AI solutions."
+    },
+    {
+      "capability_id": "ai_and_machine_learning.visual_inspection",
+      "domain": "AI and Machine Learning",
+      "name": "VISUAL INSPECTION",
+      "used_for": "Building, training, deploying, and operating machine learning and AI solutions."
+    },
+    {
+      "capability_id": "analytics.big_data_processing",
+      "domain": "Analytics",
+      "name": "BIG DATA PROCESSING",
+      "used_for": "Storing, processing, and analyzing data for reporting, BI, streaming, and large\u2011scale analytics workloads."
+    },
+    {
+      "capability_id": "analytics.business_analytics",
+      "domain": "Analytics",
+      "name": "BUSINESS ANALYTICS",
+      "used_for": "Storing, processing, and analyzing data for reporting, BI, streaming, and large\u2011scale analytics workloads."
+    },
+    {
+      "capability_id": "analytics.data_exploration_catalog",
+      "domain": "Analytics",
+      "name": "DATA EXPLORATION/CATALOG",
+      "used_for": "Storing, processing, and analyzing data for reporting, BI, streaming, and large\u2011scale analytics workloads."
+    },
+    {
+      "capability_id": "analytics.data_lake_creation",
+      "domain": "Analytics",
+      "name": "DATA LAKE CREATION",
+      "used_for": "Storing, processing, and analyzing data for reporting, BI, streaming, and large\u2011scale analytics workloads."
+    },
+    {
+      "capability_id": "analytics.data",
+      "domain": "Analytics",
+      "name": "DATA",
+      "used_for": "Storing, processing, and analyzing data for reporting, BI, streaming, and large\u2011scale analytics workloads."
+    },
+    {
+      "capability_id": "analytics.sharing_exchange",
+      "domain": "Analytics",
+      "name": "SHARING/EXCHANGE",
+      "used_for": "Storing, processing, and analyzing data for reporting, BI, streaming, and large\u2011scale analytics workloads."
+    },
+    {
+      "capability_id": "analytics.data_streaming",
+      "domain": "Analytics",
+      "name": "DATA STREAMING",
+      "used_for": "Storing, processing, and analyzing data for reporting, BI, streaming, and large\u2011scale analytics workloads. Used for real\u2011time streaming ingestion and processing."
+    },
+    {
+      "capability_id": "analytics.data_warehousing",
+      "domain": "Analytics",
+      "name": "DATA WAREHOUSING",
+      "used_for": "Storing, processing, and analyzing data for reporting, BI, streaming, and large\u2011scale analytics workloads."
+    },
+    {
+      "capability_id": "analytics.data_wrangling",
+      "domain": "Analytics",
+      "name": "DATA WRANGLING",
+      "used_for": "Storing, processing, and analyzing data for reporting, BI, streaming, and large\u2011scale analytics workloads."
+    },
+    {
+      "capability_id": "analytics.etl",
+      "domain": "Analytics",
+      "name": "ETL",
+      "used_for": "Storing, processing, and analyzing data for reporting, BI, streaming, and large\u2011scale analytics workloads."
+    },
+    {
+      "capability_id": "analytics.hosted_hadoop_spark",
+      "domain": "Analytics",
+      "name": "HOSTED HADOOP/SPARK",
+      "used_for": "Storing, processing, and analyzing data for reporting, BI, streaming, and large\u2011scale analytics workloads."
+    },
+    {
+      "capability_id": "analytics.managed_kafka",
+      "domain": "Analytics",
+      "name": "MANAGED KAFKA",
+      "used_for": "Storing, processing, and analyzing data for reporting, BI, streaming, and large\u2011scale analytics workloads."
+    },
+    {
+      "capability_id": "analytics.managed_search",
+      "domain": "Analytics",
+      "name": "MANAGED SEARCH",
+      "used_for": "Storing, processing, and analyzing data for reporting, BI, streaming, and large\u2011scale analytics workloads."
+    },
+    {
+      "capability_id": "analytics.query_service",
+      "domain": "Analytics",
+      "name": "QUERY SERVICE",
+      "used_for": "Storing, processing, and analyzing data for reporting, BI, streaming, and large\u2011scale analytics workloads."
+    },
+    {
+      "capability_id": "application_integration_developer_tools.api_management",
+      "domain": "Application Integration & Developer Tools",
+      "name": "API MANAGEMENT",
+      "used_for": "Capability area: Application Integration & Developer Tools. Used for API management, gateways, and developer publishing."
+    },
+    {
+      "capability_id": "application_integration_developer_tools.distributed",
+      "domain": "Application Integration & Developer Tools",
+      "name": "DISTRIBUTED",
+      "used_for": "Capability area: Application Integration & Developer Tools."
+    },
+    {
+      "capability_id": "application_integration_developer_tools.coordination",
+      "domain": "Application Integration & Developer Tools",
+      "name": "COORDINATION",
+      "used_for": "Capability area: Application Integration & Developer Tools."
+    },
+    {
+      "capability_id": "application_integration_developer_tools.event_handling",
+      "domain": "Application Integration & Developer Tools",
+      "name": "EVENT HANDLING",
+      "used_for": "Capability area: Application Integration & Developer Tools."
+    },
+    {
+      "capability_id": "application_integration_developer_tools.integration",
+      "domain": "Application Integration & Developer Tools",
+      "name": "INTEGRATION",
+      "used_for": "Capability area: Application Integration & Developer Tools."
+    },
+    {
+      "capability_id": "application_integration_developer_tools.service",
+      "domain": "Application Integration & Developer Tools",
+      "name": "SERVICE",
+      "used_for": "Capability area: Application Integration & Developer Tools."
+    },
+    {
+      "capability_id": "application_integration_developer_tools.messaging",
+      "domain": "Application Integration & Developer Tools",
+      "name": "MESSAGING",
+      "used_for": "Capability area: Application Integration & Developer Tools. Used for messaging, pub/sub, queues, and event buses."
+    },
+    {
+      "capability_id": "application_integration_developer_tools.service",
+      "domain": "Application Integration & Developer Tools",
+      "name": "SERVICE",
+      "used_for": "Capability area: Application Integration & Developer Tools."
+    },
+    {
+      "capability_id": "application_integration_developer_tools.discovery",
+      "domain": "Application Integration & Developer Tools",
+      "name": "DISCOVERY",
+      "used_for": "Capability area: Application Integration & Developer Tools."
+    },
+    {
+      "capability_id": "application_integration_developer_tools.service_mesh",
+      "domain": "Application Integration & Developer Tools",
+      "name": "SERVICE MESH",
+      "used_for": "Capability area: Application Integration & Developer Tools."
+    },
+    {
+      "capability_id": "application_integration_developer_tools.workflow",
+      "domain": "Application Integration & Developer Tools",
+      "name": "WORKFLOW",
+      "used_for": "Capability area: Application Integration & Developer Tools."
+    },
+    {
+      "capability_id": "application_integration_developer_tools.orchestration",
+      "domain": "Application Integration & Developer Tools",
+      "name": "ORCHESTRATION",
+      "used_for": "Capability area: Application Integration & Developer Tools."
+    },
+    {
+      "capability_id": "application_integration_developer_tools.business_applicatio",
+      "domain": "Application Integration & Developer Tools",
+      "name": "Business Applicatio",
+      "used_for": "Capability area: Application Integration & Developer Tools."
+    },
+    {
+      "capability_id": "application_integration_developer_tools.collaboration",
+      "domain": "Application Integration & Developer Tools",
+      "name": "COLLABORATION",
+      "used_for": "Capability area: Application Integration & Developer Tools."
+    },
+    {
+      "capability_id": "application_integration_developer_tools.suite",
+      "domain": "Application Integration & Developer Tools",
+      "name": "SUITE",
+      "used_for": "Capability area: Application Integration & Developer Tools."
+    },
+    {
+      "capability_id": "application_integration_developer_tools.document_sharing",
+      "domain": "Application Integration & Developer Tools",
+      "name": "DOCUMENT SHARING",
+      "used_for": "Capability area: Application Integration & Developer Tools. Used for document extraction, OCR, and document understanding."
+    },
+    {
+      "capability_id": "application_integration_developer_tools.email_and",
+      "domain": "Application Integration & Developer Tools",
+      "name": "EMAIL AND",
+      "used_for": "Capability area: Application Integration & Developer Tools."
+    },
+    {
+      "capability_id": "application_integration_developer_tools.calendar",
+      "domain": "Application Integration & Developer Tools",
+      "name": "CALENDAR",
+      "used_for": "Capability area: Application Integration & Developer Tools."
+    },
+    {
+      "capability_id": "application_integration_developer_tools.low_code_no_code",
+      "domain": "Application Integration & Developer Tools",
+      "name": "LOW-CODE/NO-CODE",
+      "used_for": "Capability area: Application Integration & Developer Tools."
+    },
+    {
+      "capability_id": "application_integration_developer_tools.tools",
+      "domain": "Application Integration & Developer Tools",
+      "name": "TOOLS",
+      "used_for": "Capability area: Application Integration & Developer Tools."
+    },
+    {
+      "capability_id": "application_integration_developer_tools.video_calls_and",
+      "domain": "Application Integration & Developer Tools",
+      "name": "VIDEO CALLS AND",
+      "used_for": "Capability area: Application Integration & Developer Tools."
+    },
+    {
+      "capability_id": "application_integration_developer_tools.chat",
+      "domain": "Application Integration & Developer Tools",
+      "name": "CHAT",
+      "used_for": "Capability area: Application Integration & Developer Tools."
+    },
+    {
+      "capability_id": "application_integration_developer_tools.voice_assistant",
+      "domain": "Application Integration & Developer Tools",
+      "name": "VOICE ASSISTANT",
+      "used_for": "Capability area: Application Integration & Developer Tools."
+    },
+    {
+      "capability_id": "compute.autoscaling",
+      "domain": "Compute",
+      "name": "AUTOSCALING",
+      "used_for": "Running application workloads using VMs, containers, serverless, and edge compute options."
+    },
+    {
+      "capability_id": "compute.batch_processing",
+      "domain": "Compute",
+      "name": "BATCH PROCESSING",
+      "used_for": "Running application workloads using VMs, containers, serverless, and edge compute options."
+    },
+    {
+      "capability_id": "compute.hybrid_extended",
+      "domain": "Compute",
+      "name": "HYBRID/EXTENDED",
+      "used_for": "Running application workloads using VMs, containers, serverless, and edge compute options."
+    },
+    {
+      "capability_id": "compute.infra",
+      "domain": "Compute",
+      "name": "INFRA",
+      "used_for": "Running application workloads using VMs, containers, serverless, and edge compute options."
+    },
+    {
+      "capability_id": "compute.serverless",
+      "domain": "Compute",
+      "name": "SERVERLESS",
+      "used_for": "Running application workloads using VMs, containers, serverless, and edge compute options. Used for event\u2011driven serverless compute and functions."
+    },
+    {
+      "capability_id": "compute.compute",
+      "domain": "Compute",
+      "name": "COMPUTE",
+      "used_for": "Running application workloads using VMs, containers, serverless, and edge compute options."
+    },
+    {
+      "capability_id": "compute.hpc_management",
+      "domain": "Compute",
+      "name": "HPC MANAGEMENT",
+      "used_for": "Running application workloads using VMs, containers, serverless, and edge compute options."
+    },
+    {
+      "capability_id": "compute.dedicated_servers",
+      "domain": "Compute",
+      "name": "DEDICATED SERVERS",
+      "used_for": "Running application workloads using VMs, containers, serverless, and edge compute options."
+    },
+    {
+      "capability_id": "compute.paas_web_hosting",
+      "domain": "Compute",
+      "name": "PAAS WEB HOSTING",
+      "used_for": "Running application workloads using VMs, containers, serverless, and edge compute options."
+    },
+    {
+      "capability_id": "compute.quantum",
+      "domain": "Compute",
+      "name": "QUANTUM",
+      "used_for": "Running application workloads using VMs, containers, serverless, and edge compute options."
+    },
+    {
+      "capability_id": "compute.computing",
+      "domain": "Compute",
+      "name": "COMPUTING",
+      "used_for": "Running application workloads using VMs, containers, serverless, and edge compute options."
+    },
+    {
+      "capability_id": "compute.virtual_machines",
+      "domain": "Compute",
+      "name": "VIRTUAL MACHINES",
+      "used_for": "Running application workloads using VMs, containers, serverless, and edge compute options."
+    },
+    {
+      "capability_id": "compute.vm_image_builder",
+      "domain": "Compute",
+      "name": "VM IMAGE BUILDER",
+      "used_for": "Running application workloads using VMs, containers, serverless, and edge compute options."
+    },
+    {
+      "capability_id": "compute.vmware",
+      "domain": "Compute",
+      "name": "VMWARE",
+      "used_for": "Running application workloads using VMs, containers, serverless, and edge compute options."
+    },
+    {
+      "capability_id": "compute.integration",
+      "domain": "Compute",
+      "name": "INTEGRATION",
+      "used_for": "Running application workloads using VMs, containers, serverless, and edge compute options."
+    },
+    {
+      "capability_id": "compute.containers",
+      "domain": "Compute",
+      "name": "Containers",
+      "used_for": "Running application workloads using VMs, containers, serverless, and edge compute options. Used for container orchestration and container runtime support."
+    },
+    {
+      "capability_id": "compute.container",
+      "domain": "Compute",
+      "name": "CONTAINER",
+      "used_for": "Running application workloads using VMs, containers, serverless, and edge compute options. Used for container orchestration and container runtime support."
+    },
+    {
+      "capability_id": "compute.migration",
+      "domain": "Compute",
+      "name": "MIGRATION",
+      "used_for": "Running application workloads using VMs, containers, serverless, and edge compute options."
+    },
+    {
+      "capability_id": "compute.container",
+      "domain": "Compute",
+      "name": "CONTAINER",
+      "used_for": "Running application workloads using VMs, containers, serverless, and edge compute options. Used for container orchestration and container runtime support."
+    },
+    {
+      "capability_id": "compute.registry",
+      "domain": "Compute",
+      "name": "REGISTRY",
+      "used_for": "Running application workloads using VMs, containers, serverless, and edge compute options."
+    },
+    {
+      "capability_id": "compute.managed",
+      "domain": "Compute",
+      "name": "MANAGED",
+      "used_for": "Running application workloads using VMs, containers, serverless, and edge compute options."
+    },
+    {
+      "capability_id": "compute.containers",
+      "domain": "Compute",
+      "name": "CONTAINERS",
+      "used_for": "Running application workloads using VMs, containers, serverless, and edge compute options. Used for container orchestration and container runtime support."
+    },
+    {
+      "capability_id": "compute.managed",
+      "domain": "Compute",
+      "name": "MANAGED",
+      "used_for": "Running application workloads using VMs, containers, serverless, and edge compute options."
+    },
+    {
+      "capability_id": "compute.kubernetes",
+      "domain": "Compute",
+      "name": "KUBERNETES",
+      "used_for": "Running application workloads using VMs, containers, serverless, and edge compute options."
+    },
+    {
+      "capability_id": "compute.serverless",
+      "domain": "Compute",
+      "name": "SERVERLESS",
+      "used_for": "Running application workloads using VMs, containers, serverless, and edge compute options. Used for event\u2011driven serverless compute and functions."
+    },
+    {
+      "capability_id": "compute.containers",
+      "domain": "Compute",
+      "name": "CONTAINERS",
+      "used_for": "Running application workloads using VMs, containers, serverless, and edge compute options. Used for container orchestration and container runtime support."
+    },
+    {
+      "capability_id": "cost_controls.architecture_review",
+      "domain": "Cost Controls",
+      "name": "ARCHITECTURE REVIEW",
+      "used_for": "Capability area: Cost Controls."
+    },
+    {
+      "capability_id": "cost_controls.billing_and",
+      "domain": "Cost Controls",
+      "name": "BILLING AND",
+      "used_for": "Capability area: Cost Controls."
+    },
+    {
+      "capability_id": "cost_controls.budgeting_tools",
+      "domain": "Cost Controls",
+      "name": "BUDGETING TOOLS",
+      "used_for": "Capability area: Cost Controls."
+    },
+    {
+      "capability_id": "cost_controls.optimization",
+      "domain": "Cost Controls",
+      "name": "OPTIMIZATION &",
+      "used_for": "Capability area: Cost Controls."
+    },
+    {
+      "capability_id": "cost_controls.recommendations",
+      "domain": "Cost Controls",
+      "name": "RECOMMENDATIONS",
+      "used_for": "Capability area: Cost Controls."
+    },
+    {
+      "capability_id": "cost_controls.commitment",
+      "domain": "Cost Controls",
+      "name": "COMMITMENT",
+      "used_for": "Capability area: Cost Controls."
+    },
+    {
+      "capability_id": "cost_controls.discounts_i",
+      "domain": "Cost Controls",
+      "name": "DISCOUNTS I",
+      "used_for": "Capability area: Cost Controls."
+    },
+    {
+      "capability_id": "cost_controls.spot_preemptible_vms",
+      "domain": "Cost Controls",
+      "name": "SPOT/PREEMPTIBLE VMS",
+      "used_for": "Capability area: Cost Controls."
+    },
+    {
+      "capability_id": "cost_controls.i",
+      "domain": "Cost Controls",
+      "name": "I",
+      "used_for": "Capability area: Cost Controls."
+    },
+    {
+      "capability_id": "cost_controls.cost_anomaly",
+      "domain": "Cost Controls",
+      "name": "COST ANOMALY",
+      "used_for": "Capability area: Cost Controls."
+    },
+    {
+      "capability_id": "cost_controls.detection",
+      "domain": "Cost Controls",
+      "name": "DETECTION",
+      "used_for": "Capability area: Cost Controls."
+    },
+    {
+      "capability_id": "cost_controls.databases",
+      "domain": "Cost Controls",
+      "name": "Databases",
+      "used_for": "Capability area: Cost Controls."
+    },
+    {
+      "capability_id": "cost_controls.category_aws_se",
+      "domain": "Cost Controls",
+      "name": "CATEGORY AWS SE",
+      "used_for": "Capability area: Cost Controls."
+    },
+    {
+      "capability_id": "cost_controls.blockchain_amazon",
+      "domain": "Cost Controls",
+      "name": "BLOCKCHAIN Amazon",
+      "used_for": "Capability area: Cost Controls."
+    },
+    {
+      "capability_id": "cost_controls.blockcha",
+      "domain": "Cost Controls",
+      "name": "Blockcha",
+      "used_for": "Capability area: Cost Controls."
+    },
+    {
+      "capability_id": "cost_controls.in_memory_amazon",
+      "domain": "Cost Controls",
+      "name": "IN-MEMORY Amazon",
+      "used_for": "Capability area: Cost Controls."
+    },
+    {
+      "capability_id": "cost_controls.cache_amazon",
+      "domain": "Cost Controls",
+      "name": "CACHE Amazon",
+      "used_for": "Capability area: Cost Controls."
+    },
+    {
+      "capability_id": "cost_controls.nosql_amazon",
+      "domain": "Cost Controls",
+      "name": "NOSQL Amazon",
+      "used_for": "Capability area: Cost Controls."
+    },
+    {
+      "capability_id": "cost_controls.column_for_cass",
+      "domain": "Cost Controls",
+      "name": "(COLUMN- (for Cass",
+      "used_for": "Capability area: Cost Controls."
+    },
+    {
+      "capability_id": "cost_controls.family",
+      "domain": "Cost Controls",
+      "name": "FAMILY)",
+      "used_for": "Capability area: Cost Controls."
+    },
+    {
+      "capability_id": "cost_controls.nosql_amazon",
+      "domain": "Cost Controls",
+      "name": "NOSQL Amazon",
+      "used_for": "Capability area: Cost Controls."
+    },
+    {
+      "capability_id": "cost_controls.document",
+      "domain": "Cost Controls",
+      "name": "(DOCUMENT)",
+      "used_for": "Capability area: Cost Controls. Used for document extraction, OCR, and document understanding."
+    },
+    {
+      "capability_id": "cost_controls.nosql_graph_amazon",
+      "domain": "Cost Controls",
+      "name": "NOSQL (GRAPH) Amazon",
+      "used_for": "Capability area: Cost Controls."
+    },
+    {
+      "capability_id": "cost_controls.nosql_key_amazon",
+      "domain": "Cost Controls",
+      "name": "NOSQL (KEY- Amazon",
+      "used_for": "Capability area: Cost Controls."
+    },
+    {
+      "capability_id": "cost_controls.value",
+      "domain": "Cost Controls",
+      "name": "VALUE)",
+      "used_for": "Capability area: Cost Controls."
+    },
+    {
+      "capability_id": "cost_controls.relational_rds_am",
+      "domain": "Cost Controls",
+      "name": "RELATIONAL RDS, Am",
+      "used_for": "Capability area: Cost Controls."
+    },
+    {
+      "capability_id": "cost_controls.rdbms_amazon",
+      "domain": "Cost Controls",
+      "name": "(RDBMS) Amazon",
+      "used_for": "Capability area: Cost Controls."
+    },
+    {
+      "capability_id": "iot.app",
+      "domain": "IoT",
+      "name": "APP",
+      "used_for": "Capability area: IoT."
+    },
+    {
+      "capability_id": "iot.configuration",
+      "domain": "IoT",
+      "name": "CONFIGURATION",
+      "used_for": "Capability area: IoT."
+    },
+    {
+      "capability_id": "iot.artifact",
+      "domain": "IoT",
+      "name": "ARTIFACT",
+      "used_for": "Capability area: IoT."
+    },
+    {
+      "capability_id": "iot.management",
+      "domain": "IoT",
+      "name": "MANAGEMENT",
+      "used_for": "Capability area: IoT."
+    },
+    {
+      "capability_id": "iot.ci_cd",
+      "domain": "IoT",
+      "name": "CI/CD",
+      "used_for": "Capability area: IoT."
+    },
+    {
+      "capability_id": "iot.cli_tools",
+      "domain": "IoT",
+      "name": "CLI TOOLS",
+      "used_for": "Capability area: IoT."
+    },
+    {
+      "capability_id": "iot.code_debugging",
+      "domain": "IoT",
+      "name": "CODE DEBUGGING",
+      "used_for": "Capability area: IoT."
+    },
+    {
+      "capability_id": "iot.sdks_and_dev",
+      "domain": "IoT",
+      "name": "SDKS AND DEV",
+      "used_for": "Capability area: IoT."
+    },
+    {
+      "capability_id": "iot.kits",
+      "domain": "IoT",
+      "name": "KITS",
+      "used_for": "Capability area: IoT."
+    },
+    {
+      "capability_id": "iot.git_repositories",
+      "domain": "IoT",
+      "name": "GIT REPOSITORIES",
+      "used_for": "Capability area: IoT."
+    },
+    {
+      "capability_id": "iot.web_mobile_app",
+      "domain": "IoT",
+      "name": "WEB/MOBILE APP",
+      "used_for": "Capability area: IoT."
+    },
+    {
+      "capability_id": "iot.dev",
+      "domain": "IoT",
+      "name": "DEV",
+      "used_for": "Capability area: IoT."
+    },
+    {
+      "capability_id": "iot.powershell",
+      "domain": "IoT",
+      "name": "POWERSHELL",
+      "used_for": "Capability area: IoT."
+    },
+    {
+      "capability_id": "iot.scheduling",
+      "domain": "IoT",
+      "name": "SCHEDULING",
+      "used_for": "Capability area: IoT."
+    },
+    {
+      "capability_id": "iot.testing",
+      "domain": "IoT",
+      "name": "TESTING",
+      "used_for": "Capability area: IoT."
+    },
+    {
+      "capability_id": "iot.iot",
+      "domain": "IoT",
+      "name": "IoT",
+      "used_for": "Capability area: IoT. Used for device management, telemetry ingestion, and IoT platforms."
+    },
+    {
+      "capability_id": "iot.device",
+      "domain": "IoT",
+      "name": "DEVICE",
+      "used_for": "Capability area: IoT."
+    },
+    {
+      "capability_id": "iot.connectivity",
+      "domain": "IoT",
+      "name": "CONNECTIVITY",
+      "used_for": "Capability area: IoT."
+    },
+    {
+      "capability_id": "iot.edge",
+      "domain": "IoT",
+      "name": "EDGE",
+      "used_for": "Capability area: IoT."
+    },
+    {
+      "capability_id": "iot.computing",
+      "domain": "IoT",
+      "name": "COMPUTING",
+      "used_for": "Capability area: IoT."
+    },
+    {
+      "capability_id": "iot_security.anomaly_detection",
+      "domain": "IoT Security",
+      "name": "ANOMALY DETECTION",
+      "used_for": "Protecting workloads and data through identity, encryption, threat detection, monitoring, and policy enforcement."
+    },
+    {
+      "capability_id": "iot_security.app_data_catalog",
+      "domain": "IoT Security",
+      "name": "APP/DATA CATALOG",
+      "used_for": "Protecting workloads and data through identity, encryption, threat detection, monitoring, and policy enforcement."
+    },
+    {
+      "capability_id": "iot_security.automation_orchestration",
+      "domain": "IoT Security",
+      "name": "AUTOMATION/ORCHESTRATION",
+      "used_for": "Protecting workloads and data through identity, encryption, threat detection, monitoring, and policy enforcement."
+    },
+    {
+      "capability_id": "iot_security.config_management",
+      "domain": "IoT Security",
+      "name": "CONFIG MANAGEMENT",
+      "used_for": "Protecting workloads and data through identity, encryption, threat detection, monitoring, and policy enforcement."
+    },
+    {
+      "capability_id": "iot_security.monitoring",
+      "domain": "IoT Security",
+      "name": "MONITORING",
+      "used_for": "Protecting workloads and data through identity, encryption, threat detection, monitoring, and policy enforcement. Used for monitoring, metrics, and alerting."
+    },
+    {
+      "capability_id": "iot_security.health_dashboards",
+      "domain": "IoT Security",
+      "name": "HEALTH DASHBOARDS",
+      "used_for": "Protecting workloads and data through identity, encryption, threat detection, monitoring, and policy enforcement."
+    },
+    {
+      "capability_id": "iot_security.hybrid_multi_cloud_mgmt",
+      "domain": "IoT Security",
+      "name": "HYBRID/MULTI-CLOUD MGMT",
+      "used_for": "Protecting workloads and data through identity, encryption, threat detection, monitoring, and policy enforcement."
+    },
+    {
+      "capability_id": "iot_security.license_management",
+      "domain": "IoT Security",
+      "name": "LICENSE MANAGEMENT",
+      "used_for": "Protecting workloads and data through identity, encryption, threat detection, monitoring, and policy enforcement."
+    },
+    {
+      "capability_id": "iot_security.logging",
+      "domain": "IoT Security",
+      "name": "LOGGING",
+      "used_for": "Protecting workloads and data through identity, encryption, threat detection, monitoring, and policy enforcement. Used for centralized logging, audit trails, and log analytics."
+    },
+    {
+      "capability_id": "iot_security.admin_console",
+      "domain": "IoT Security",
+      "name": "ADMIN CONSOLE",
+      "used_for": "Protecting workloads and data through identity, encryption, threat detection, monitoring, and policy enforcement."
+    },
+    {
+      "capability_id": "iot_security.multi_account_mgmt",
+      "domain": "IoT Security",
+      "name": "MULTI-ACCOUNT MGMT",
+      "used_for": "Protecting workloads and data through identity, encryption, threat detection, monitoring, and policy enforcement."
+    },
+    {
+      "capability_id": "iot_security.network_monitoring",
+      "domain": "IoT Security",
+      "name": "NETWORK MONITORING",
+      "used_for": "Protecting workloads and data through identity, encryption, threat detection, monitoring, and policy enforcement. Used for monitoring, metrics, and alerting."
+    },
+    {
+      "capability_id": "iot_security.policy_enforcement",
+      "domain": "IoT Security",
+      "name": "POLICY ENFORCEMENT",
+      "used_for": "Protecting workloads and data through identity, encryption, threat detection, monitoring, and policy enforcement."
+    },
+    {
+      "capability_id": "migration.database",
+      "domain": "Migration",
+      "name": "DATABASE",
+      "used_for": "Capability area: Migration."
+    },
+    {
+      "capability_id": "migration.migration",
+      "domain": "Migration",
+      "name": "MIGRATION",
+      "used_for": "Capability area: Migration."
+    },
+    {
+      "capability_id": "migration.data_transfer",
+      "domain": "Migration",
+      "name": "DATA TRANSFER",
+      "used_for": "Capability area: Migration."
+    },
+    {
+      "capability_id": "migration.appliances",
+      "domain": "Migration",
+      "name": "APPLIANCES",
+      "used_for": "Capability area: Migration."
+    },
+    {
+      "capability_id": "migration.migration",
+      "domain": "Migration",
+      "name": "MIGRATION",
+      "used_for": "Capability area: Migration."
+    },
+    {
+      "capability_id": "migration.accelerators",
+      "domain": "Migration",
+      "name": "ACCELERATORS",
+      "used_for": "Capability area: Migration."
+    },
+    {
+      "capability_id": "migration.online_transfer",
+      "domain": "Migration",
+      "name": "ONLINE TRANSFER",
+      "used_for": "Capability area: Migration."
+    },
+    {
+      "capability_id": "migration.sync",
+      "domain": "Migration",
+      "name": "& SYNC",
+      "used_for": "Capability area: Migration."
+    },
+    {
+      "capability_id": "migration.on_premise",
+      "domain": "Migration",
+      "name": "ON-PREMISE",
+      "used_for": "Capability area: Migration."
+    },
+    {
+      "capability_id": "migration.discovery",
+      "domain": "Migration",
+      "name": "DISCOVERY",
+      "used_for": "Capability area: Migration."
+    },
+    {
+      "capability_id": "migration.vm_migration",
+      "domain": "Migration",
+      "name": "VM MIGRATION",
+      "used_for": "Capability area: Migration."
+    },
+    {
+      "capability_id": "migration.miscellaneous",
+      "domain": "Migration",
+      "name": "Miscellaneous",
+      "used_for": "Capability area: Migration."
+    },
+    {
+      "capability_id": "migration.customer",
+      "domain": "Migration",
+      "name": "CUSTOMER",
+      "used_for": "Capability area: Migration."
+    },
+    {
+      "capability_id": "migration.multichannel",
+      "domain": "Migration",
+      "name": "MULTICHANNEL",
+      "used_for": "Capability area: Migration."
+    },
+    {
+      "capability_id": "migration.contact",
+      "domain": "Migration",
+      "name": "CONTACT",
+      "used_for": "Capability area: Migration."
+    },
+    {
+      "capability_id": "migration.marketing",
+      "domain": "Migration",
+      "name": "MARKETING &",
+      "used_for": "Capability area: Migration."
+    },
+    {
+      "capability_id": "migration.notifications",
+      "domain": "Migration",
+      "name": "NOTIFICATIONS",
+      "used_for": "Capability area: Migration."
+    },
+    {
+      "capability_id": "migration.healthcare_fhir",
+      "domain": "Migration",
+      "name": "HEALTHCARE (FHIR)",
+      "used_for": "Capability area: Migration."
+    },
+    {
+      "capability_id": "migration.gaming",
+      "domain": "Migration",
+      "name": "GAMING",
+      "used_for": "Capability area: Migration."
+    },
+    {
+      "capability_id": "migration.genomics",
+      "domain": "Migration",
+      "name": "GENOMICS",
+      "used_for": "Capability area: Migration."
+    },
+    {
+      "capability_id": "migration.geolocation",
+      "domain": "Migration",
+      "name": "GEOLOCATION",
+      "used_for": "Capability area: Migration."
+    },
+    {
+      "capability_id": "migration.services",
+      "domain": "Migration",
+      "name": "SERVICES",
+      "used_for": "Capability area: Migration."
+    },
+    {
+      "capability_id": "migration.media_services",
+      "domain": "Migration",
+      "name": "MEDIA SERVICES",
+      "used_for": "Capability area: Migration."
+    },
+    {
+      "capability_id": "migration.robotics",
+      "domain": "Migration",
+      "name": "ROBOTICS",
+      "used_for": "Capability area: Migration."
+    },
+    {
+      "capability_id": "migration.satellite_ground",
+      "domain": "Migration",
+      "name": "SATELLITE GROUND",
+      "used_for": "Capability area: Migration."
+    },
+    {
+      "capability_id": "migration.stations",
+      "domain": "Migration",
+      "name": "STATIONS",
+      "used_for": "Capability area: Migration."
+    },
+    {
+      "capability_id": "end_user_computing_networking.5g_edge_infra",
+      "domain": "End User Computing & Networking",
+      "name": "5G EDGE INFRA",
+      "used_for": "Designing connectivity, routing, segmentation, and secure access between networks, workloads, and on\u2011prem environments."
+    },
+    {
+      "capability_id": "end_user_computing_networking.api_management",
+      "domain": "End User Computing & Networking",
+      "name": "API MANAGEMENT",
+      "used_for": "Designing connectivity, routing, segmentation, and secure access between networks, workloads, and on\u2011prem environments. Used for API management, gateways, and developer publishing."
+    },
+    {
+      "capability_id": "end_user_computing_networking.cdn",
+      "domain": "End User Computing & Networking",
+      "name": "CDN",
+      "used_for": "Designing connectivity, routing, segmentation, and secure access between networks, workloads, and on\u2011prem environments. Used for content delivery and edge caching."
+    },
+    {
+      "capability_id": "end_user_computing_networking.dedicated",
+      "domain": "End User Computing & Networking",
+      "name": "DEDICATED",
+      "used_for": "Designing connectivity, routing, segmentation, and secure access between networks, workloads, and on\u2011prem environments."
+    },
+    {
+      "capability_id": "end_user_computing_networking.connection",
+      "domain": "End User Computing & Networking",
+      "name": "CONNECTION",
+      "used_for": "Designing connectivity, routing, segmentation, and secure access between networks, workloads, and on\u2011prem environments."
+    },
+    {
+      "capability_id": "end_user_computing_networking.dns",
+      "domain": "End User Computing & Networking",
+      "name": "DNS",
+      "used_for": "Designing connectivity, routing, segmentation, and secure access between networks, workloads, and on\u2011prem environments. Used for name resolution and traffic steering."
+    },
+    {
+      "capability_id": "end_user_computing_networking.load_balancing",
+      "domain": "End User Computing & Networking",
+      "name": "LOAD BALANCING",
+      "used_for": "Designing connectivity, routing, segmentation, and secure access between networks, workloads, and on\u2011prem environments. Used for distributing traffic across instances/services for availability and scale."
+    },
+    {
+      "capability_id": "end_user_computing_networking.global_traffic",
+      "domain": "End User Computing & Networking",
+      "name": "GLOBAL TRAFFIC",
+      "used_for": "Designing connectivity, routing, segmentation, and secure access between networks, workloads, and on\u2011prem environments."
+    },
+    {
+      "capability_id": "end_user_computing_networking.acceleration",
+      "domain": "End User Computing & Networking",
+      "name": "ACCELERATION",
+      "used_for": "Designing connectivity, routing, segmentation, and secure access between networks, workloads, and on\u2011prem environments."
+    },
+    {
+      "capability_id": "end_user_computing_networking.nat",
+      "domain": "End User Computing & Networking",
+      "name": "NAT",
+      "used_for": "Designing connectivity, routing, segmentation, and secure access between networks, workloads, and on\u2011prem environments."
+    },
+    {
+      "capability_id": "end_user_computing_networking.vpc_peering",
+      "domain": "End User Computing & Networking",
+      "name": "VPC PEERING",
+      "used_for": "Designing connectivity, routing, segmentation, and secure access between networks, workloads, and on\u2011prem environments."
+    },
+    {
+      "capability_id": "end_user_computing_networking.private",
+      "domain": "End User Computing & Networking",
+      "name": "PRIVATE",
+      "used_for": "Designing connectivity, routing, segmentation, and secure access between networks, workloads, and on\u2011prem environments. Used for enabling private connectivity without traversing the public internet."
+    },
+    {
+      "capability_id": "end_user_computing_networking.connectivity",
+      "domain": "End User Computing & Networking",
+      "name": "CONNECTIVITY",
+      "used_for": "Designing connectivity, routing, segmentation, and secure access between networks, workloads, and on\u2011prem environments."
+    },
+    {
+      "capability_id": "end_user_computing_networking.service_discovery",
+      "domain": "End User Computing & Networking",
+      "name": "SERVICE DISCOVERY",
+      "used_for": "Designing connectivity, routing, segmentation, and secure access between networks, workloads, and on\u2011prem environments."
+    },
+    {
+      "capability_id": "end_user_computing_networking.service_mesh",
+      "domain": "End User Computing & Networking",
+      "name": "SERVICE MESH",
+      "used_for": "Designing connectivity, routing, segmentation, and secure access between networks, workloads, and on\u2011prem environments."
+    },
+    {
+      "capability_id": "end_user_computing_networking.wan_vpn",
+      "domain": "End User Computing & Networking",
+      "name": "WAN/VPN",
+      "used_for": "Designing connectivity, routing, segmentation, and secure access between networks, workloads, and on\u2011prem environments. Used for site\u2011to\u2011site or remote access VPN connectivity."
+    },
+    {
+      "capability_id": "end_user_computing_networking.vpc",
+      "domain": "End User Computing & Networking",
+      "name": "VPC",
+      "used_for": "Designing connectivity, routing, segmentation, and secure access between networks, workloads, and on\u2011prem environments."
+    },
+    {
+      "capability_id": "security.audit_and_compliance",
+      "domain": "Security",
+      "name": "AUDIT AND COMPLIANCE",
+      "used_for": "Protecting workloads and data through identity, encryption, threat detection, monitoring, and policy enforcement."
+    },
+    {
+      "capability_id": "security.centralized_security",
+      "domain": "Security",
+      "name": "CENTRALIZED SECURITY",
+      "used_for": "Protecting workloads and data through identity, encryption, threat detection, monitoring, and policy enforcement."
+    },
+    {
+      "capability_id": "security.mgmt",
+      "domain": "Security",
+      "name": "MGMT",
+      "used_for": "Protecting workloads and data through identity, encryption, threat detection, monitoring, and policy enforcement."
+    },
+    {
+      "capability_id": "security.certificate_management",
+      "domain": "Security",
+      "name": "CERTIFICATE MANAGEMENT",
+      "used_for": "Protecting workloads and data through identity, encryption, threat detection, monitoring, and policy enforcement."
+    },
+    {
+      "capability_id": "security.confidential_computing",
+      "domain": "Security",
+      "name": "CONFIDENTIAL COMPUTING",
+      "used_for": "Protecting workloads and data through identity, encryption, threat detection, monitoring, and policy enforcement."
+    },
+    {
+      "capability_id": "security.container_security",
+      "domain": "Security",
+      "name": "CONTAINER SECURITY",
+      "used_for": "Protecting workloads and data through identity, encryption, threat detection, monitoring, and policy enforcement. Used for container orchestration and container runtime support."
+    },
+    {
+      "capability_id": "security.data_discovery_classification",
+      "domain": "Security",
+      "name": "DATA DISCOVERY/CLASSIFICATION",
+      "used_for": "Protecting workloads and data through identity, encryption, threat detection, monitoring, and policy enforcement."
+    },
+    {
+      "capability_id": "security.ddos_protection",
+      "domain": "Security",
+      "name": "DDOS PROTECTION",
+      "used_for": "Protecting workloads and data through identity, encryption, threat detection, monitoring, and policy enforcement. Used for protecting against distributed denial\u2011of\u2011service attacks."
+    },
+    {
+      "capability_id": "security.identity_access_mgmt",
+      "domain": "Security",
+      "name": "IDENTITY & ACCESS MGMT",
+      "used_for": "Protecting workloads and data through identity, encryption, threat detection, monitoring, and policy enforcement. Used for identity, access management, and federation."
+    },
+    {
+      "capability_id": "security.iam",
+      "domain": "Security",
+      "name": "(IAM)",
+      "used_for": "Protecting workloads and data through identity, encryption, threat detection, monitoring, and policy enforcement."
+    },
+    {
+      "capability_id": "security.certificate_key",
+      "domain": "Security",
+      "name": "CERTIFICATE/KEY",
+      "used_for": "Protecting workloads and data through identity, encryption, threat detection, monitoring, and policy enforcement."
+    },
+    {
+      "capability_id": "security.management",
+      "domain": "Security",
+      "name": "MANAGEMENT",
+      "used_for": "Protecting workloads and data through identity, encryption, threat detection, monitoring, and policy enforcement."
+    },
+    {
+      "capability_id": "security.microsoft_ad_support",
+      "domain": "Security",
+      "name": "MICROSOFT AD SUPPORT",
+      "used_for": "Protecting workloads and data through identity, encryption, threat detection, monitoring, and policy enforcement."
+    },
+    {
+      "capability_id": "security.regulated_cloud_zones",
+      "domain": "Security",
+      "name": "REGULATED CLOUD ZONES",
+      "used_for": "Protecting workloads and data through identity, encryption, threat detection, monitoring, and policy enforcement."
+    },
+    {
+      "capability_id": "security.resource_access_policies",
+      "domain": "Security",
+      "name": "RESOURCE ACCESS POLICIES",
+      "used_for": "Protecting workloads and data through identity, encryption, threat detection, monitoring, and policy enforcement."
+    },
+    {
+      "capability_id": "security.secrets_management",
+      "domain": "Security",
+      "name": "SECRETS MANAGEMENT",
+      "used_for": "Protecting workloads and data through identity, encryption, threat detection, monitoring, and policy enforcement. Used for storing and rotating application secrets."
+    },
+    {
+      "capability_id": "security.context_based_access",
+      "domain": "Security",
+      "name": "CONTEXT-BASED ACCESS",
+      "used_for": "Protecting workloads and data through identity, encryption, threat detection, monitoring, and policy enforcement."
+    }
+  ]
+}

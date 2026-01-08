@@ -1,8 +1,7 @@
-# ATK – Architecture Toolkit (Cloud Decision Logic Kit)
+# ATK (Architecture Toolkit)
 
-ATK is a cloud-agnostic decision logic kit.
-It uses a master cross-reference catalog of cloud services and capabilities,
-validated and built through CI/CD, to generate static decision artifacts.
+Data-driven Cloud Decision Logic Kit.
 
-Humans edit only /data.
-Everything else is generated.
+- Edit `/data/master/master-matrix.json` quarterly.
+- Run `npm run validate && npm run build`.
+- Use `/generated/*` as the exported catalog for UIs and downstream tooling.
