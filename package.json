@@ -6,6 +6,8 @@
   "scripts": {
     "validate": "node scripts/validate.mjs",
     "build": "node scripts/build.mjs",
-    "package": "node scripts/package.mjs"
+    "package": "node scripts/package.mjs",
+    "decide": "node scripts/decide.mjs",
+    "resolve": "node scripts/resolve.mjs"
   }
 }
