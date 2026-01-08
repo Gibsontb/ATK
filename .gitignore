@@ -1,5 +1,3 @@
 node_modules/
+web/generated/
 dist/
-# generated outputs are reproducible
-/generated/*.js
-/generated/*.json

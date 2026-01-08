@@ -1,25 +1,35 @@
+// scripts/package.mjs
 import fs from "fs";
 import path from "path";
 import { execSync } from "child_process";
+import { fileURLToPath } from "url";
 
-const version = JSON.parse(fs.readFileSync("package.json","utf8")).version;
-const outDir = "dist";
-fs.mkdirSync(outDir, { recursive: true });
-const zipName = `ATK_${version}.zip`;
-const zipPath = path.join(outDir, zipName);
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const repoRoot = path.resolve(__dirname, "..");
 
-// Cross-platform zip creation
-try{
-  // prefer system zip if available
-  execSync(`zip -r "${zipPath}" . -x "node_modules/*" -x "dist/*"`, { stdio: "inherit" });
-}catch(e){
-  // fallback to PowerShell on Windows
-  try{
-    execSync(`powershell -NoProfile -Command "Compress-Archive -Path * -DestinationPath '${zipPath}' -Force"`, { stdio: "inherit" });
-  }catch(e2){
-    console.error("Unable to create zip. Install 'zip' or use PowerShell Compress-Archive.");
-    process.exit(1);
-  }
+const master = JSON.parse(fs.readFileSync(path.join(repoRoot, "data", "master", "master-matrix.json"), "utf8"));
+const ver = master.catalog_version || "unknown";
+
+const distDir = path.join(repoRoot, "dist");
+fs.mkdirSync(distDir, { recursive: true });
+
+const zipName = `ATK-${ver}.zip`;
+const zipPath = path.join(distDir, zipName);
+
+// Prefer system zip if available
+function has(cmd){
+  try { execSync(`${cmd} --version`, { stdio: "ignore" }); return true; } catch { return false; }
 }
 
-console.log("Packaged:", zipPath);
+try{
+  if (has("zip")){
+    execSync(`zip -r "${zipPath}" . -x "node_modules/*" -x "dist/*" -x ".git/*"`, { cwd: repoRoot, stdio: "inherit" });
+  } else {
+    // Fallback: Node-based simple zip is not included; use PowerShell on Windows
+    execSync(`powershell -Command "Compress-Archive -Path * -DestinationPath '${zipPath}' -Force"`, { cwd: repoRoot, stdio: "inherit" });
+  }
+  console.log("Packaged:", zipPath);
+} catch (e){
+  console.error("Packaging failed:", e.message);
+  process.exit(1);
+}

@@ -1,7 +1,14 @@
-# ATK (Architecture Toolkit)
+# ATK (Architecture Toolkit) – Cloud Decision Logic Kit
 
-Data-driven Cloud Decision Logic Kit.
+ATK is a data-driven Cloud Decision Logic Kit.
 
-- Edit `/data/master/master-matrix.json` quarterly.
-- Run `npm run validate && npm run build`.
-- Use `/generated/*` as the exported catalog for UIs and downstream tooling.
+- **Source of truth:** `data/master/master-matrix.json` (quarterly-updated master cross-reference)
+- **Build outputs (browser + inventories):** `web/generated/*` and `generated/*`
+- **UI:** `web/cloud-tech-navigator/` (consumes generated catalog)
+
+## Quick start
+```bash
+npm run validate
+npm run build
+```
+Then open `web/index.html`.

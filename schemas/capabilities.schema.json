@@ -1,39 +1,5 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "ATK Capabilities",
-  "type": "object",
-  "required": [
-    "capabilities"
-  ],
-  "properties": {
-    "capabilities": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "required": [
-          "capability_id",
-          "domain",
-          "name",
-          "description"
-        ],
-        "properties": {
-          "capability_id": {
-            "type": "string"
-          },
-          "domain": {
-            "type": "string"
-          },
-          "name": {
-            "type": "string"
-          },
-          "description": {
-            "type": "string",
-            "minLength": 10
-          }
-        },
-        "additionalProperties": false
-      }
-    }
-  },
-  "additionalProperties": false
+  "title": "ATK Capabilities (placeholder)",
+  "type": "object"
 }

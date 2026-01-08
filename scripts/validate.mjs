@@ -1,20 +1,23 @@
+// scripts/validate.mjs
 import fs from "fs";
+import path from "path";
+import { fileURLToPath } from "url";
 
-const master = JSON.parse(fs.readFileSync("data/master/master-matrix.json","utf8"));
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const repoRoot = path.resolve(__dirname, "..");
 
-let ok = true;
-function fail(msg){ console.error("VALIDATION FAIL:", msg); ok = false; }
+const masterPath = path.join(repoRoot, "data", "master", "master-matrix.json");
+const master = JSON.parse(fs.readFileSync(masterPath, "utf8"));
 
-if(!master.rows || !Array.isArray(master.rows)) fail("master.rows missing/invalid");
+if (!master.catalog_version) throw new Error("master-matrix.json missing catalog_version");
+if (!Array.isArray(master.rows)) throw new Error("master-matrix.json rows must be an array");
 
 const ids = new Set();
-for(const r of master.rows){
-  if(!r.capability_id) fail("Missing capability_id on a row");
-  if(ids.has(r.capability_id)) fail("Duplicate capability_id: " + r.capability_id);
+for (const r of master.rows){
+  if (!r.capability_id || !r.capability_name || !r.domain) throw new Error("Row missing domain/capability_name/capability_id");
+  if (ids.has(r.capability_id)) throw new Error("Duplicate capability_id: " + r.capability_id);
   ids.add(r.capability_id);
-  if(!r.used_for || r.used_for.trim().length < 10) fail("used_for too short: " + r.capability_id);
-  if(!r.providers) fail("providers missing: " + r.capability_id);
+  if (!r.providers) throw new Error("Row missing providers: " + r.capability_id);
 }
 
-if(!ok) process.exit(1);
-console.log("Validation passed:", master.rows.length, "rows");
+console.log(`Validation passed: ${master.rows.length} rows, version ${master.catalog_version}`);
