@@ -8,6 +8,9 @@
     "build": "node scripts/build.mjs",
     "package": "node scripts/package.mjs",
     "decide": "node scripts/decide.mjs",
-    "resolve": "node scripts/resolve.mjs"
+    "resolve": "node scripts/resolve.mjs",
+    "dr": "node scripts/decide-resolve.mjs",
+    "report": "node scripts/report.mjs",
+    "report:all": "node scripts/report-all.mjs"
   }
 }

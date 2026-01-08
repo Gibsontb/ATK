@@ -1,0 +1,6 @@
+{
+  "cloud": "aws",
+  "data_classification": ["CJIS"],
+  "internet_exposed": true,
+  "rto_minutes": 30
+}
