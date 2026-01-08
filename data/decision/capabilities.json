@@ -1,340 +1,94 @@
 {
   "capabilities": [
     {
-      "capability_id": "ai_and_machine_learning.ai_containers",
-      "name": "AI CONTAINERS",
-      "domain": "AI and Machine Learning",
-      "used_for": "Provides ai containers capability in the AI and Machine Learning domain."
+      "capability_id": "ai_ml",
+      "name": "ai-ml",
+      "domain": "ai-ml",
+      "used_for": "ai-ml services and capabilities used in cloud architectures."
     },
     {
-      "capability_id": "ai_and_machine_learning.ai_powered_assistant",
-      "name": "AI-POWERED ASSISTANT",
-      "domain": "AI and Machine Learning",
-      "used_for": "Provides ai-powered assistant capability in the AI and Machine Learning domain."
+      "capability_id": "analytics",
+      "name": "analytics",
+      "domain": "analytics",
+      "used_for": "analytics services and capabilities used in cloud architectures."
     },
     {
-      "capability_id": "ai_and_machine_learning.human",
-      "name": "HUMAN",
-      "domain": "AI and Machine Learning",
-      "used_for": "Provides human capability in the AI and Machine Learning domain."
+      "capability_id": "app_integration",
+      "name": "app-integration",
+      "domain": "app-integration",
+      "used_for": "app-integration services and capabilities used in cloud architectures."
     },
     {
-      "capability_id": "ai_and_machine_learning.review_moderation",
-      "name": "REVIEW/MODERATION",
-      "domain": "AI and Machine Learning",
-      "used_for": "Provides review/moderation capability in the AI and Machine Learning domain."
+      "capability_id": "business_apps",
+      "name": "business-apps",
+      "domain": "business-apps",
+      "used_for": "business-apps services and capabilities used in cloud architectures."
     },
     {
-      "capability_id": "ai_and_machine_learning.chatbot_builder",
-      "name": "CHATBOT BUILDER",
-      "domain": "AI and Machine Learning",
-      "used_for": "Provides chatbot builder capability in the AI and Machine Learning domain."
+      "capability_id": "compute",
+      "name": "compute",
+      "domain": "compute",
+      "used_for": "compute services and capabilities used in cloud architectures."
     },
     {
-      "capability_id": "ai_and_machine_learning.data_labeling",
-      "name": "DATA LABELING",
-      "domain": "AI and Machine Learning",
-      "used_for": "Provides data labeling capability in the AI and Machine Learning domain."
+      "capability_id": "containers",
+      "name": "containers",
+      "domain": "containers",
+      "used_for": "containers services and capabilities used in cloud architectures."
     },
     {
-      "capability_id": "ai_and_machine_learning.document_extraction",
-      "name": "DOCUMENT EXTRACTION",
-      "domain": "AI and Machine Learning",
-      "used_for": "Provides document extraction capability in the AI and Machine Learning domain."
+      "capability_id": "cost_controls",
+      "name": "cost-controls",
+      "domain": "cost-controls",
+      "used_for": "cost-controls services and capabilities used in cloud architectures."
     },
     {
-      "capability_id": "ai_and_machine_learning.generative_ai",
-      "name": "GENERATIVE AI",
-      "domain": "AI and Machine Learning",
-      "used_for": "Provides generative ai capability in the AI and Machine Learning domain."
+      "capability_id": "databases",
+      "name": "databases",
+      "domain": "databases",
+      "used_for": "databases services and capabilities used in cloud architectures."
     },
     {
-      "capability_id": "ai_and_machine_learning.image_recognition",
-      "name": "IMAGE RECOGNITION",
-      "domain": "AI and Machine Learning",
-      "used_for": "Provides image recognition capability in the AI and Machine Learning domain."
+      "capability_id": "devtools",
+      "name": "devtools",
+      "domain": "devtools",
+      "used_for": "devtools services and capabilities used in cloud architectures."
     },
     {
-      "capability_id": "ai_and_machine_learning.inference_acceleration",
-      "name": "INFERENCE ACCELERATION",
-      "domain": "AI and Machine Learning",
-      "used_for": "Provides inference acceleration capability in the AI and Machine Learning domain."
+      "capability_id": "iot",
+      "name": "iot",
+      "domain": "iot",
+      "used_for": "iot services and capabilities used in cloud architectures."
     },
     {
-      "capability_id": "ai_and_machine_learning.language_translation",
-      "name": "LANGUAGE TRANSLATION",
-      "domain": "AI and Machine Learning",
-      "used_for": "Provides language translation capability in the AI and Machine Learning domain."
+      "capability_id": "management_governance",
+      "name": "management-governance",
+      "domain": "management-governance",
+      "used_for": "management-governance services and capabilities used in cloud architectures."
     },
     {
-      "capability_id": "ai_and_machine_learning.ml_ai_chips",
-      "name": "ML/AI CHIPS",
-      "domain": "AI and Machine Learning",
-      "used_for": "Provides ml/ai chips capability in the AI and Machine Learning domain."
+      "capability_id": "migration",
+      "name": "migration",
+      "domain": "migration",
+      "used_for": "migration services and capabilities used in cloud architectures."
     },
     {
-      "capability_id": "ai_and_machine_learning.managed_ml_platform",
-      "name": "MANAGED ML PLATFORM",
-      "domain": "AI and Machine Learning",
-      "used_for": "Provides managed ml platform capability in the AI and Machine Learning domain."
+      "capability_id": "misc",
+      "name": "misc",
+      "domain": "misc",
+      "used_for": "misc services and capabilities used in cloud architectures."
     },
     {
-      "capability_id": "ai_and_machine_learning.notebooks",
-      "name": "NOTEBOOKS",
-      "domain": "AI and Machine Learning",
-      "used_for": "Provides notebooks capability in the AI and Machine Learning domain."
+      "capability_id": "networking_cdn",
+      "name": "networking-cdn",
+      "domain": "networking-cdn",
+      "used_for": "networking-cdn services and capabilities used in cloud architectures."
     },
     {
-      "capability_id": "ai_and_machine_learning.online_fraud_detection",
-      "name": "ONLINE FRAUD DETECTION",
-      "domain": "AI and Machine Learning",
-      "used_for": "Provides online fraud detection capability in the AI and Machine Learning domain."
-    },
-    {
-      "capability_id": "ai_and_machine_learning.preconfigured_ml_vms",
-      "name": "PRECONFIGURED ML VMS",
-      "domain": "AI and Machine Learning",
-      "used_for": "Provides preconfigured ml vms capability in the AI and Machine Learning domain."
-    },
-    {
-      "capability_id": "ai_and_machine_learning.recommendation",
-      "name": "RECOMMENDATION",
-      "domain": "AI and Machine Learning",
-      "used_for": "Provides recommendation capability in the AI and Machine Learning domain."
-    },
-    {
-      "capability_id": "ai_and_machine_learning.engine",
-      "name": "ENGINE",
-      "domain": "AI and Machine Learning",
-      "used_for": "Provides engine capability in the AI and Machine Learning domain."
-    },
-    {
-      "capability_id": "ai_and_machine_learning.speech",
-      "name": "SPEECH",
-      "domain": "AI and Machine Learning",
-      "used_for": "Provides speech capability in the AI and Machine Learning domain."
-    },
-    {
-      "capability_id": "ai_and_machine_learning.recognition_synthesis",
-      "name": "RECOGNITION/SYNTHESIS",
-      "domain": "AI and Machine Learning",
-      "used_for": "Provides recognition/synthesis capability in the AI and Machine Learning domain."
-    },
-    {
-      "capability_id": "ai_and_machine_learning.text_analysis",
-      "name": "TEXT ANALYSIS",
-      "domain": "AI and Machine Learning",
-      "used_for": "Provides text analysis capability in the AI and Machine Learning domain."
-    },
-    {
-      "capability_id": "ai_and_machine_learning.time_series_forecasting",
-      "name": "TIME-SERIES FORECASTING",
-      "domain": "AI and Machine Learning",
-      "used_for": "Provides time-series forecasting capability in the AI and Machine Learning domain."
-    },
-    {
-      "capability_id": "ai_and_machine_learning.video_analysis",
-      "name": "VIDEO ANALYSIS",
-      "domain": "AI and Machine Learning",
-      "used_for": "Provides video analysis capability in the AI and Machine Learning domain."
-    },
-    {
-      "capability_id": "ai_and_machine_learning.visual_inspection",
-      "name": "VISUAL INSPECTION",
-      "domain": "AI and Machine Learning",
-      "used_for": "Provides visual inspection capability in the AI and Machine Learning domain."
-    },
-    {
-      "capability_id": "analytics.big_data_processing",
-      "name": "BIG DATA PROCESSING",
-      "domain": "Analytics",
-      "used_for": "Provides big data processing capability in the Analytics domain."
-    },
-    {
-      "capability_id": "analytics.business_analytics",
-      "name": "BUSINESS ANALYTICS",
-      "domain": "Analytics",
-      "used_for": "Provides business analytics capability in the Analytics domain."
-    },
-    {
-      "capability_id": "analytics.data",
-      "name": "DATA",
-      "domain": "Analytics",
-      "used_for": "Provides data capability in the Analytics domain."
-    },
-    {
-      "capability_id": "analytics.exploration_catalog",
-      "name": "EXPLORATION/CATALOG",
-      "domain": "Analytics",
-      "used_for": "Provides exploration/catalog capability in the Analytics domain."
-    },
-    {
-      "capability_id": "analytics.data_lake_creation",
-      "name": "DATA LAKE CREATION",
-      "domain": "Analytics",
-      "used_for": "Provides data lake creation capability in the Analytics domain."
-    },
-    {
-      "capability_id": "analytics.sharing_exchange",
-      "name": "SHARING/EXCHANGE",
-      "domain": "Analytics",
-      "used_for": "Provides sharing/exchange capability in the Analytics domain."
-    },
-    {
-      "capability_id": "analytics.data_streaming",
-      "name": "DATA STREAMING",
-      "domain": "Analytics",
-      "used_for": "Provides data streaming capability in the Analytics domain."
-    },
-    {
-      "capability_id": "analytics.data_warehousing",
-      "name": "DATA WAREHOUSING",
-      "domain": "Analytics",
-      "used_for": "Provides data warehousing capability in the Analytics domain."
-    },
-    {
-      "capability_id": "analytics.data_wrangling",
-      "name": "DATA WRANGLING",
-      "domain": "Analytics",
-      "used_for": "Provides data wrangling capability in the Analytics domain."
-    },
-    {
-      "capability_id": "analytics.etl",
-      "name": "ETL",
-      "domain": "Analytics",
-      "used_for": "Provides etl capability in the Analytics domain."
-    },
-    {
-      "capability_id": "analytics.hosted_hadoop_spark",
-      "name": "HOSTED HADOOP/SPARK",
-      "domain": "Analytics",
-      "used_for": "Provides hosted hadoop/spark capability in the Analytics domain."
-    },
-    {
-      "capability_id": "analytics.managed_kafka",
-      "name": "MANAGED KAFKA",
-      "domain": "Analytics",
-      "used_for": "Provides managed kafka capability in the Analytics domain."
-    },
-    {
-      "capability_id": "analytics.managed_search",
-      "name": "MANAGED SEARCH",
-      "domain": "Analytics",
-      "used_for": "Provides managed search capability in the Analytics domain."
-    },
-    {
-      "capability_id": "analytics.query_service",
-      "name": "QUERY SERVICE",
-      "domain": "Analytics",
-      "used_for": "Provides query service capability in the Analytics domain."
-    },
-    {
-      "capability_id": "security.audit_and_compliance",
-      "name": "AUDIT AND COMPLIANCE",
-      "domain": "Security",
-      "used_for": "Provides audit and compliance capability in the Security domain."
-    },
-    {
-      "capability_id": "security.centralized_security",
-      "name": "CENTRALIZED SECURITY",
-      "domain": "Security",
-      "used_for": "Provides centralized security capability in the Security domain."
-    },
-    {
-      "capability_id": "security.mgmt",
-      "name": "MGMT",
-      "domain": "Security",
-      "used_for": "Provides mgmt capability in the Security domain."
-    },
-    {
-      "capability_id": "security.certificate_management",
-      "name": "CERTIFICATE MANAGEMENT",
-      "domain": "Security",
-      "used_for": "Provides certificate management capability in the Security domain."
-    },
-    {
-      "capability_id": "security.confidential_computing",
-      "name": "CONFIDENTIAL COMPUTING",
-      "domain": "Security",
-      "used_for": "Provides confidential computing capability in the Security domain."
-    },
-    {
-      "capability_id": "security.container_security",
-      "name": "CONTAINER SECURITY",
-      "domain": "Security",
-      "used_for": "Provides container security capability in the Security domain."
-    },
-    {
-      "capability_id": "security.data",
-      "name": "DATA",
-      "domain": "Security",
-      "used_for": "Provides data capability in the Security domain."
-    },
-    {
-      "capability_id": "security.discovery_classification",
-      "name": "DISCOVERY/CLASSIFICATION",
-      "domain": "Security",
-      "used_for": "Provides discovery/classification capability in the Security domain."
-    },
-    {
-      "capability_id": "security.ddos_protection",
-      "name": "DDOS PROTECTION",
-      "domain": "Security",
-      "used_for": "Provides ddos protection capability in the Security domain."
-    },
-    {
-      "capability_id": "security.identity_access_mgmt",
-      "name": "IDENTITY & ACCESS MGMT",
-      "domain": "Security",
-      "used_for": "Provides identity & access mgmt capability in the Security domain."
-    },
-    {
-      "capability_id": "security.iam",
-      "name": "(IAM)",
-      "domain": "Security",
-      "used_for": "Provides (iam) capability in the Security domain."
-    },
-    {
-      "capability_id": "security.certificate_key",
-      "name": "CERTIFICATE/KEY",
-      "domain": "Security",
-      "used_for": "Provides certificate/key capability in the Security domain."
-    },
-    {
-      "capability_id": "security.management",
-      "name": "MANAGEMENT",
-      "domain": "Security",
-      "used_for": "Provides management capability in the Security domain."
-    },
-    {
-      "capability_id": "security.microsoft_ad_support",
-      "name": "MICROSOFT AD SUPPORT",
-      "domain": "Security",
-      "used_for": "Provides microsoft ad support capability in the Security domain."
-    },
-    {
-      "capability_id": "security.regulated_cloud_zones",
-      "name": "REGULATED CLOUD ZONES",
-      "domain": "Security",
-      "used_for": "Provides regulated cloud zones capability in the Security domain."
-    },
-    {
-      "capability_id": "security.resource_access_policies",
-      "name": "RESOURCE ACCESS POLICIES",
-      "domain": "Security",
-      "used_for": "Provides resource access policies capability in the Security domain."
-    },
-    {
-      "capability_id": "security.secrets_management",
-      "name": "SECRETS MANAGEMENT",
-      "domain": "Security",
-      "used_for": "Provides secrets management capability in the Security domain."
-    },
-    {
-      "capability_id": "security.context_based_access",
-      "name": "CONTEXT-BASED ACCESS",
-      "domain": "Security",
-      "used_for": "Provides context-based access capability in the Security domain."
+      "capability_id": "security",
+      "name": "security",
+      "domain": "security",
+      "used_for": "security services and capabilities used in cloud architectures."
     }
   ]
 }
