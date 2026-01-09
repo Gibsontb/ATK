@@ -11,6 +11,6 @@
     "resolve": "node scripts/resolve.mjs",
     "dr": "node scripts/decide-resolve.mjs",
     "report": "node scripts/report.mjs",
-    "report:all": "node scripts/report-all.mjs"
+    "report all": "node scripts/report-all.mjs"
   }
 }
