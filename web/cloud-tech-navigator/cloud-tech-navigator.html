@@ -515,6 +515,8 @@
 
 <!-- Load all cloud / tech catalogs -->
 <script src="../generated/catalog.generated.js"></script>
+<script src="aws-services.js"></script>
+<script src="gcp-services.js"></script>
 <script src="azure-services.js"></script>
 <script src="oci-services.js"></script>
 <script src="ansible-options.js"></script>
@@ -522,6 +524,7 @@
 <script src="networking-options.js"></script>
 <script src="vmware-profiles.js"></script>
 <script src="f5-services.js"></script>
+<script src="ocp-services.js"></script>
 
   <script>
     // IRS-relevant / security-heavy hints (mainly GCP/Workspace); everything else falls back
@@ -834,6 +837,7 @@
         { id: "network",  label: "Networking",          group: "Infra", getData: () => window.CDK?.tools?.networking },
         { id: "terraform",label: "Terraform",           group: "Infra", getData: () => window.CDK?.tools?.terraform },
         { id: "ansible",  label: "Ansible",             group: "Infra", getData: () => window.CDK?.tools?.ansible },
+        { id: "ocp",      label: "OpenShift (OCP)",       group: "Infra", getData: () => window.CDK?.tools?.ocp },
         { id: "f5",       label: "F5 / BIG-IP / NGINX", group: "Infra", getData: () => window.CDK?.tools?.f5 }
       ];
 
