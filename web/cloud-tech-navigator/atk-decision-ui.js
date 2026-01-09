@@ -1,4 +1,6 @@
-// web/cloud-tech-navigator/atk-decision-ui.js
+/* web/cloud-tech-navigator/atk-decision-ui.js
+   Decision panel that uses ATK_DECISION + ATK_CAP_MAP (true capability->service mapping)
+*/
 (function () {
   function el(tag, attrs = {}, children = []) {
     const n = document.createElement(tag);
@@ -12,7 +14,7 @@
   }
 
   function getDecisionData() {
-    if (!window.ATK_DECISION) throw new Error("ATK_DECISION not loaded (missing decision.generated.js)");
+    if (!window.ATK_DECISION) throw new Error("ATK_DECISION not loaded (missing ../generated/decision.generated.js)");
     return window.ATK_DECISION;
   }
 
@@ -88,42 +90,48 @@
   }
 
   function resolveServices(cloud, capabilityIds) {
-    // Uses the master catalog already bundled into the UI build
-    const master = window.ATK_CATALOG; // set by catalog.generated.js
-    if (!master) throw new Error("ATK_CATALOG not loaded (missing catalog.generated.js)");
+    // Preferred: true mapping
+    const capMap = window.ATK_CAP_MAP || null;
 
-    // We don’t have row-level master-matrix in the browser here; we resolve via CDK provider service categories:
-    // Strategy: find service names whose mapped category domain matches a capability’s domain by heuristic.
-    // Better: If your catalog.generated.js includes a capability->services map, swap to that.
-    //
-    // For now, show provider services grouped by provider category as “implementation inventory”.
-    const provider = (window.CDK?.providers || {})[cloud];
-    if (!provider) throw new Error(`Provider not found: ${cloud}`);
+    const services = new Set();
+    const gaps = [];
+    const details = [];
 
-    // Minimal “resolution”: just return provider inventory; true capability->service mapping is done in CLI.
-    // If you want exact mapping, we’ll generate a browser mapping file next.
-    const all = [];
-    for (const [cat, arr] of Object.entries(provider.serviceCategories || {})) {
-      for (const s of arr || []) all.push(s.name);
+    for (const cid of (capabilityIds || [])) {
+      const row = capMap ? capMap[cid] : null;
+      const mapped = row?.[cloud] || [];
+
+      if (!mapped.length) gaps.push(cid);
+      mapped.forEach(s => services.add(s));
+
+      details.push({
+        capability_id: cid,
+        capability_name: row?.capability_name || "",
+        domain: row?.domain || "",
+        used_for: row?.used_for || "",
+        services: mapped
+      });
     }
-    all.sort((a, b) => a.localeCompare(b));
-    return all;
+
+    return {
+      cloud,
+      resolved_services: Array.from(services).sort((a, b) => a.localeCompare(b)),
+      gaps,
+      details
+    };
   }
 
   function mount() {
-    // Add a small panel without disturbing existing layout
-    const host = document.body;
-
     const panel = el("div", {
       id: "atkDecisionPanel",
       style: {
         position: "fixed",
         right: "10px",
         bottom: "10px",
-        width: "380px",
-        maxHeight: "70vh",
+        width: "420px",
+        maxHeight: "72vh",
         overflow: "auto",
-        background: "rgba(20,20,20,0.95)",
+        background: "rgba(10,12,18,0.96)",
         border: "1px solid rgba(255,255,255,0.15)",
         borderRadius: "10px",
         padding: "10px",
@@ -133,26 +141,21 @@
       }
     });
 
-    const title = el("div", { style: { fontWeight: "bold", marginBottom: "6px" } }, [
-      "ATK Decision (Quick Panel)"
+    const titleRow = el("div", { style: { display: "flex", justifyContent: "space-between", alignItems: "center" } }, [
+      el("div", { style: { fontWeight: "bold" } }, ["ATK Decision"]),
+      el("button", { style: { cursor: "pointer" }, onclick: () => panel.remove() }, ["✕"])
     ]);
 
-    const cloudSel = el("select", { id: "atkCloud" }, [
+    const cloudSel = el("select", { id: "atkCloud", style: { width: "100%" } }, [
       el("option", { value: "aws" }, ["aws"]),
       el("option", { value: "azure" }, ["azure"]),
       el("option", { value: "gcp" }, ["gcp"]),
       el("option", { value: "oci" }, ["oci"])
     ]);
 
-    const classInp = el("input", {
-      id: "atkClass",
-      type: "text",
-      value: "CJIS",
-      style: { width: "100%" }
-    });
-
+    const classInp = el("input", { id: "atkClass", type: "text", value: "CJIS", style: { width: "100%" } });
     const exposedChk = el("input", { id: "atkExposed", type: "checkbox", checked: "checked" });
-    const rtoInp = el("input", { id: "atkRto", type: "number", value: "30", style: { width: "90px" } });
+    const rtoInp = el("input", { id: "atkRto", type: "number", value: "30", style: { width: "110px" } });
 
     const out = el("pre", {
       id: "atkOut",
@@ -163,15 +166,10 @@
         borderRadius: "8px",
         marginTop: "8px"
       }
-    }, ["(Run a decision…)"]);
+    }, ["(ready)"]);
 
     const runBtn = el("button", {
-      style: {
-        width: "100%",
-        marginTop: "8px",
-        padding: "8px",
-        cursor: "pointer"
-      },
+      style: { width: "100%", marginTop: "8px", padding: "8px", cursor: "pointer" },
       onclick: () => {
         try {
           const cloud = document.getElementById("atkCloud").value;
@@ -180,40 +178,39 @@
           const internet_exposed = document.getElementById("atkExposed").checked;
           const rto_minutes = Number(document.getElementById("atkRto").value);
 
-          const decision = decide({ data_classification, internet_exposed, rto_minutes });
-          const inv = resolveServices(cloud, decision.required_capabilities);
+          const d = decide({ data_classification, internet_exposed, rto_minutes });
+          const r = resolveServices(cloud, d.required_capabilities);
 
           out.textContent = JSON.stringify({
             input: { cloud, data_classification, internet_exposed, rto_minutes },
-            decision,
-            services_inventory_for_cloud: inv.slice(0, 50), // cap display
-            note: "This panel currently shows provider inventory. Next step: generate exact capability->service mapping for browser."
+            top_patterns: d.top_patterns,
+            required_capabilities: d.required_capabilities,
+            preferred_capabilities: d.preferred_capabilities,
+            resolved_services: r.resolved_services,
+            gaps: r.gaps,
+            details: r.details
           }, null, 2);
         } catch (e) {
           out.textContent = "ERROR: " + (e?.message || e);
         }
       }
-    }, ["Run Decision"]);
+    }, ["Run"]);
 
-    panel.appendChild(title);
-    panel.appendChild(el("div", {}, [
-      "Cloud: ", cloudSel
-    ]));
-    panel.appendChild(el("div", { style: { marginTop: "6px" } }, [
-      "Data classification (comma-separated):"
-    ]));
+    panel.appendChild(titleRow);
+    panel.appendChild(el("div", { style: { marginTop: "8px" } }, ["Cloud:"]));
+    panel.appendChild(cloudSel);
+    panel.appendChild(el("div", { style: { marginTop: "8px" } }, ["Data classification (comma-separated):"]));
     panel.appendChild(classInp);
-    panel.appendChild(el("div", { style: { marginTop: "6px", display: "flex", gap: "10px", alignItems: "center" } }, [
+    panel.appendChild(el("div", { style: { marginTop: "8px", display: "flex", gap: "10px", alignItems: "center" } }, [
       el("label", {}, [exposedChk, " Internet exposed"]),
       el("label", {}, ["RTO min: ", rtoInp])
     ]));
     panel.appendChild(runBtn);
     panel.appendChild(out);
 
-    host.appendChild(panel);
+    document.body.appendChild(panel);
   }
 
-  // Mount after DOM
   if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", mount);
   } else {
