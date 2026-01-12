@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "source": "manual-entry",
+    "export_time": "2026-01-11T23:01:08.453Z",
+    "notes": "Manual datacenter entry template (fill this in)"
+  },
+  "compute": {
+    "clusters": [
+      {
+        "cluster_id": "cl-01",
+        "name": "MainCluster",
+        "ha_enabled": true,
+        "drs_enabled": true,
+        "notes": "Optional"
+      }
+    ],
+    "hosts": [
+      {
+        "host_id": "esx-01",
+        "name": "esx01",
+        "cluster_id": "cl-01",
+        "cpu_sockets": 2,
+        "cpu_cores": 32,
+        "ram_gb": 512,
+        "esxi_version": "8.0",
+        "notes": "Add NICs/HBAs later if you have them"
+      }
+    ],
+    "vms": [
+      {
+        "vm_id": "vm-001",
+        "name": "app01",
+        "power_state": "poweredOn",
+        "guest_os": "Windows Server",
+        "vcpus": 4,
+        "ram_gb": 16,
+        "cluster_id": "cl-01",
+        "host_id": "esx-01",
+        "datastores": [
+          "ds-01"
+        ],
+        "networks": [
+          "seg-001"
+        ],
+        "disks": [
+          {
+            "disk_id": "d1",
+            "size_gb": 200,
+            "thin_provisioned": true,
+            "datastore": "ds-01"
+          }
+        ],
+        "tags": {
+          "env": "prod",
+          "app": "core"
+        }
+      }
+    ]
+  },
+  "network": {
+    "segments": [
+      {
+        "segment_id": "seg-001",
+        "name": "VLAN100-App",
+        "vlan_id": 100,
+        "switch_name": "dvSwitch0",
+        "cidr": null,
+        "gateway": null,
+        "zone": "app",
+        "notes": "CIDR often not known from vCenter exports; add via overrides later"
+      }
+    ]
+  },
+  "storage": {
+    "datastores": [
+      {
+        "datastore_id": "ds-01",
+        "name": "Datastore01",
+        "type": "vmfs",
+        "capacity_gb": 10000,
+        "used_gb": 6500,
+        "tier": "gold",
+        "notes": "Tier can be inferred later; keep as label for mapping"
+      }
+    ]
+  }
+}

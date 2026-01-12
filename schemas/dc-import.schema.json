@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ATK Datacenter Import (Normalized)",
+  "type": "object",
+  "required": ["meta", "compute", "network", "storage"],
+  "properties": {
+    "meta": {
+      "type": "object",
+      "required": ["source", "export_time"],
+      "properties": {
+        "source": { "type": "string" },
+        "export_time": { "type": "string" },
+        "notes": { "type": "string" },
+        "version": { "type": "string", "default": "1.0.0" }
+      }
+    },
+    "compute": {
+      "type": "object",
+      "required": ["clusters", "hosts", "vms"],
+      "properties": {
+        "clusters": { "type": "array", "items": { "type": "object" } },
+        "hosts": { "type": "array", "items": { "type": "object" } },
+        "vms": { "type": "array", "items": { "type": "object" } }
+      }
+    },
+    "network": {
+      "type": "object",
+      "required": ["segments"],
+      "properties": {
+        "segments": { "type": "array", "items": { "type": "object" } }
+      }
+    },
+    "storage": {
+      "type": "object",
+      "required": ["datastores"],
+      "properties": {
+        "datastores": { "type": "array", "items": { "type": "object" } }
+      }
+    }
+  }
+}

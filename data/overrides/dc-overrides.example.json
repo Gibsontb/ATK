@@ -1,0 +1,21 @@
+{
+  "target": {
+    "cloud": "aws",
+    "region": "us-east-1",
+    "connectivity": "vpn",
+    "naming_prefix": "example"
+  },
+  "policy_overrides": {
+    "data_classification": ["CJIS"],
+    "internet_exposed": false,
+    "rto_minutes": 240
+  },
+  "network_overrides": {
+    "segment_map": {
+      "seg-001": {
+        "rename": "prod-app",
+        "cidr": "10.10.0.0/24"
+      }
+    }
+  }
+}

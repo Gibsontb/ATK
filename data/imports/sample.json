@@ -1,0 +1,6 @@
+{
+  "meta": { "source": "manual", "export_time": "2026-01-11T00:00:00Z" },
+  "compute": { "clusters": [], "hosts": [], "vms": [] },
+  "network": { "segments": [] },
+  "storage": { "datastores": [] }
+}

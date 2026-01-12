@@ -11,6 +11,12 @@
     "resolve": "node scripts/resolve.mjs",
     "dr": "node scripts/decide-resolve.mjs",
     "report": "node scripts/report.mjs",
-    "report all": "node scripts/report-all.mjs"
+    "report all": "node scripts/report-all.mjs",
+    "dc:validate": "node scripts/dc/validate.mjs",
+    "dc:summary": "node scripts/dc/summary.mjs",
+    "dc:plan": "node scripts/dc/plan.mjs",
+    "dc:manual-template": "node scripts/dc/manual-template.mjs",
+    "dc:enrich": "node scripts/dc/enrich.mjs",
+    "ingest:rvtools": "node scripts/ingest/vmware-rvtools.mjs"
   }
 }
